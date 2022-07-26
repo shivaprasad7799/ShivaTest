@@ -1,2 +1,0 @@
-# ShivaTest
-testing the application 
