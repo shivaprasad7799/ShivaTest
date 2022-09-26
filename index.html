@@ -24,6 +24,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <div id="{{arpit_S}}"></div>
 </head>
 
 <body>
@@ -61,6 +62,19 @@
         </div>
     </div>
     <!-- Topbar End -->
+    <script>
+    ((p, l, u, g, i, n, s) => {
+          i = l.getElementsByTagName("head")[0];
+          n = l.createElement("script");
+          n.async = 1;
+          n.src = u;
+          n.onload = () => {
+              p._AppletIO.init(/*API key*/ "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbnYiOiJhcDEiLCJlbWFpbCI6InNoaXZhcHJhc2FkLmthbmR1a3VyaUA1MDBhcHBzLmNvbSIsInVzZXJfaWQiOjMxNDA2LCJjcmVhdGVkX2RhdGUiOiIxNjUxMDYzNzIwIiwidGVuYW50X2lkIjoyNTIyMCwicHJvamVjdF9pZCI6NzI0fQ.7i_R3tljAAT1Q0HpIXo6I9CG73a1vGDqNlZOnF9p5WI");
+          window._AppletIO.getSSO().render('{{arpit_S}}',(event) => {console.log(event);});
+          };
+          i.appendChild(n);
+    })(window, document, "https://appletio-js.500apps.com/main.js");
+</script>
 
 
     <!-- Navbar Start -->
